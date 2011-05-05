@@ -189,6 +189,18 @@
 				>
 			</File>
 			<File
+				RelativePath=".\XmlAttribute.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\XmlElement.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\XmlParser.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\XmppClient.cpp"
 				>
 			</File>
@@ -224,6 +236,18 @@
 			</File>
 			<File
 				RelativePath=".\targetver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\XmlAttribute.h"
+				>
+			</File>
+			<File
+				RelativePath=".\XmlElement.h"
+				>
+			</File>
+			<File
+				RelativePath=".\XmlParser.h"
 				>
 			</File>
 			<File
