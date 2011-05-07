@@ -13,6 +13,7 @@
 
 class XmlParser
 {
+	friend class XmlParserTest;
 public:
 	XmlParser(void);
 	virtual ~XmlParser(void);
