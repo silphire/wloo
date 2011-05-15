@@ -3,3 +3,7 @@ Release
 *.ncb
 *.user
 gtest
+*.bak
+~*
+*~
+
