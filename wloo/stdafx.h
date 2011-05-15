@@ -17,3 +17,8 @@
 #include <vector>
 #include <map>
 #include <cctype>
+
+#include <tchar.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <windows.h>

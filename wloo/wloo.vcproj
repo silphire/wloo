@@ -161,6 +161,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Socket.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\Stanza.cpp"
 				>
 			</File>
@@ -220,6 +224,10 @@
 			</File>
 			<File
 				RelativePath=".\Presence.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Socket.h"
 				>
 			</File>
 			<File
