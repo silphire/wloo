@@ -4,6 +4,7 @@
 
 XmlParser::XmlParser(void)
 {
+	Init();
 }
 
 XmlParser::~XmlParser(void)
@@ -37,11 +38,12 @@ void XmlParser::Parse(const std::string &toAppend)
 				break;
 			case ST_ELEMENT:
 				// ST_ELEMENTの間は、要素の終了('>')を探す。
-				buffer += toAppend[i];
 				if(toAppend[i] == '>') {
 					ParseElement(buffer);
 					buffer.clear();
 					ParserState = ST_TEXT;
+				} else {
+					buffer += toAppend[i];
 				}
 				break;
 		}
@@ -96,6 +98,7 @@ bool XmlParser::ParseElement(const std::string &elemBuffer)
 			}
 			SkipSpace(elemBuffer, i);
 			++i;
+			SkipSpace(elemBuffer, i);
 
 			// 属性値
 			delim = elemBuffer[i];
@@ -110,8 +113,6 @@ bool XmlParser::ParseElement(const std::string &elemBuffer)
 				// 属性値を区切るデリミタとして不当
 				return false;
 			}
-
-			SkipSpace(elemBuffer, i);
 		}
 
 		OnStartElement(elemName, attrPairs);
